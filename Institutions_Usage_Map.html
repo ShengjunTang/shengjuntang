@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b0bb21608d2568b74538b481772e86ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b0bb21608d2568b74538b481772e86ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b0bb21608d2568b74538b481772e86ff = L.map(
+                "map_b0bb21608d2568b74538b481772e86ff",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95d02efe5809fc284ddbad79b575888a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var marker_4cda455885b493790cc9ad53f274e048 = L.marker(
+                [23.096, 113.305],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_49df3694de00e7100bee9884c6315232 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4cda455885b493790cc9ad53f274e048.setIcon(icon_49df3694de00e7100bee9884c6315232);
+        
+    
+        var popup_5a92f8701f90e2c2315e0055f256e920 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4af73cfc518e81a5d06d8a99316c62ff = $(`<div id="html_4af73cfc518e81a5d06d8a99316c62ff" style="width: 100.0%; height: 100.0%;">中山大学</div>`)[0];
+            popup_5a92f8701f90e2c2315e0055f256e920.setContent(html_4af73cfc518e81a5d06d8a99316c62ff);
+        
+
+        marker_4cda455885b493790cc9ad53f274e048.bindPopup(popup_5a92f8701f90e2c2315e0055f256e920)
+        ;
+
+        
+    
+    
+            var marker_3ea337af9e1ecbf444fb78f65c6e5cfd = L.marker(
+                [39.98, 116.32],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_9b52e9106ca5c8ebf198e91406eb0fb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ea337af9e1ecbf444fb78f65c6e5cfd.setIcon(icon_9b52e9106ca5c8ebf198e91406eb0fb3);
+        
+    
+        var popup_33f0734867ab1ec61a3efa2df2a7657c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17d9dd6063b2282d6f70807c538ec1aa = $(`<div id="html_17d9dd6063b2282d6f70807c538ec1aa" style="width: 100.0%; height: 100.0%;">中科院计算所</div>`)[0];
+            popup_33f0734867ab1ec61a3efa2df2a7657c.setContent(html_17d9dd6063b2282d6f70807c538ec1aa);
+        
+
+        marker_3ea337af9e1ecbf444fb78f65c6e5cfd.bindPopup(popup_33f0734867ab1ec61a3efa2df2a7657c)
+        ;
+
+        
+    
+    
+            var marker_fad6eb128ac979b2191f6bcadf1daee8 = L.marker(
+                [28.704, 115.911],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_867820d7b4b46d9eafb20f898c6c560f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fad6eb128ac979b2191f6bcadf1daee8.setIcon(icon_867820d7b4b46d9eafb20f898c6c560f);
+        
+    
+        var popup_8c902220706ef01fd122242182eea52d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81b712d6af463bd42c0e6ce449c34246 = $(`<div id="html_81b712d6af463bd42c0e6ce449c34246" style="width: 100.0%; height: 100.0%;">江西科技大学</div>`)[0];
+            popup_8c902220706ef01fd122242182eea52d.setContent(html_81b712d6af463bd42c0e6ce449c34246);
+        
+
+        marker_fad6eb128ac979b2191f6bcadf1daee8.bindPopup(popup_8c902220706ef01fd122242182eea52d)
+        ;
+
+        
+    
+    
+            var marker_eda10514a1fc26ec6a81171fc9924703 = L.marker(
+                [34.156, 108.91],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_2e8253c5ddd9682ad990148e928b0b73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eda10514a1fc26ec6a81171fc9924703.setIcon(icon_2e8253c5ddd9682ad990148e928b0b73);
+        
+    
+        var popup_77a1e7f0d6f6e05bb2ad06347048d7e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89f2cb5049c953f08da753d0a5df3c31 = $(`<div id="html_89f2cb5049c953f08da753d0a5df3c31" style="width: 100.0%; height: 100.0%;">陕西师范大学</div>`)[0];
+            popup_77a1e7f0d6f6e05bb2ad06347048d7e5.setContent(html_89f2cb5049c953f08da753d0a5df3c31);
+        
+
+        marker_eda10514a1fc26ec6a81171fc9924703.bindPopup(popup_77a1e7f0d6f6e05bb2ad06347048d7e5)
+        ;
+
+        
+    
+    
+            var marker_834890b0311ba357ea39a959c4bbab6c = L.marker(
+                [36.185, 117.132],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_1a40c832484e624f5353125da41be3b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_834890b0311ba357ea39a959c4bbab6c.setIcon(icon_1a40c832484e624f5353125da41be3b4);
+        
+    
+        var popup_5b1a824a584387f1cabd93f0348b2a43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d69289f6e126b2bad3f5588238f8953 = $(`<div id="html_9d69289f6e126b2bad3f5588238f8953" style="width: 100.0%; height: 100.0%;">山东科技大学</div>`)[0];
+            popup_5b1a824a584387f1cabd93f0348b2a43.setContent(html_9d69289f6e126b2bad3f5588238f8953);
+        
+
+        marker_834890b0311ba357ea39a959c4bbab6c.bindPopup(popup_5b1a824a584387f1cabd93f0348b2a43)
+        ;
+
+        
+    
+    
+            var marker_985448ec2092ba98b2e456c28fae0e1b = L.marker(
+                [32.074, 118.803],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_65cb5f5d42d23174e7e9d07fe5ee8d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_985448ec2092ba98b2e456c28fae0e1b.setIcon(icon_65cb5f5d42d23174e7e9d07fe5ee8d8d);
+        
+    
+        var popup_8baa10651270c2eb37e20b1a8ff3534f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d17f8d2d2329e19a74915b60ed880f0 = $(`<div id="html_5d17f8d2d2329e19a74915b60ed880f0" style="width: 100.0%; height: 100.0%;">南京林业大学</div>`)[0];
+            popup_8baa10651270c2eb37e20b1a8ff3534f.setContent(html_5d17f8d2d2329e19a74915b60ed880f0);
+        
+
+        marker_985448ec2092ba98b2e456c28fae0e1b.bindPopup(popup_8baa10651270c2eb37e20b1a8ff3534f)
+        ;
+
+        
+    
+    
+            var marker_655a0e73becfecab22e173312aad90fc = L.marker(
+                [39.904, 116.407],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_bd7865401483993674ba4992bd72430e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_655a0e73becfecab22e173312aad90fc.setIcon(icon_bd7865401483993674ba4992bd72430e);
+        
+    
+        var popup_8f9c9d7e8438a22287c9c89203488837 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70a9c3acdb07761189647c3eb9b56ac9 = $(`<div id="html_70a9c3acdb07761189647c3eb9b56ac9" style="width: 100.0%; height: 100.0%;">斯卡纳（北京）科技有限公司</div>`)[0];
+            popup_8f9c9d7e8438a22287c9c89203488837.setContent(html_70a9c3acdb07761189647c3eb9b56ac9);
+        
+
+        marker_655a0e73becfecab22e173312aad90fc.bindPopup(popup_8f9c9d7e8438a22287c9c89203488837)
+        ;
+
+        
+    
+    
+            var marker_f0cee5c6828c75d0233d25e93678cc7b = L.marker(
+                [39.999, -83.014],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_a0c5e17b944af69e5d6222b136b688e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0cee5c6828c75d0233d25e93678cc7b.setIcon(icon_a0c5e17b944af69e5d6222b136b688e4);
+        
+    
+        var popup_39a7e8c56ece7499324e319932cbf43c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c38e117a416cd13c3a315a40724ed2a = $(`<div id="html_0c38e117a416cd13c3a315a40724ed2a" style="width: 100.0%; height: 100.0%;">Ohio State University</div>`)[0];
+            popup_39a7e8c56ece7499324e319932cbf43c.setContent(html_0c38e117a416cd13c3a315a40724ed2a);
+        
+
+        marker_f0cee5c6828c75d0233d25e93678cc7b.bindPopup(popup_39a7e8c56ece7499324e319932cbf43c)
+        ;
+
+        
+    
+    
+            var marker_29cc65242228b98a40116dcabc0f5f36 = L.marker(
+                [30.532, 114.364],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_5b4c974d1df87de58961e950c578f034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29cc65242228b98a40116dcabc0f5f36.setIcon(icon_5b4c974d1df87de58961e950c578f034);
+        
+    
+        var popup_04f28728064df194b50e83b6f1514014 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cee76f9ff1ac4fc0c3df484ae12096c = $(`<div id="html_2cee76f9ff1ac4fc0c3df484ae12096c" style="width: 100.0%; height: 100.0%;">Wuhan University</div>`)[0];
+            popup_04f28728064df194b50e83b6f1514014.setContent(html_2cee76f9ff1ac4fc0c3df484ae12096c);
+        
+
+        marker_29cc65242228b98a40116dcabc0f5f36.bindPopup(popup_04f28728064df194b50e83b6f1514014)
+        ;
+
+        
+    
+    
+            var marker_fc0052e3f5b269badbd2099af9bd94c4 = L.marker(
+                [29.584, 106.605],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_9e4d6f7c28952785bb5ea19457fe557d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc0052e3f5b269badbd2099af9bd94c4.setIcon(icon_9e4d6f7c28952785bb5ea19457fe557d);
+        
+    
+        var popup_ca57da90f71951b76960f7643f70c4c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d736404853d054c81e74ebe8ae3a4081 = $(`<div id="html_d736404853d054c81e74ebe8ae3a4081" style="width: 100.0%; height: 100.0%;">西南大学</div>`)[0];
+            popup_ca57da90f71951b76960f7643f70c4c9.setContent(html_d736404853d054c81e74ebe8ae3a4081);
+        
+
+        marker_fc0052e3f5b269badbd2099af9bd94c4.bindPopup(popup_ca57da90f71951b76960f7643f70c4c9)
+        ;
+
+        
+    
+    
+            var marker_c177cb9f6b5269d915a55ec44eae34b9 = L.marker(
+                [49.407, 8.69],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_445a288e0f6c0d28189f0fad8e35f07a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c177cb9f6b5269d915a55ec44eae34b9.setIcon(icon_445a288e0f6c0d28189f0fad8e35f07a);
+        
+    
+        var popup_b9ef49352026bb7f278dc17c0895a64a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c51f69ac9b5c9db857d3ecfe86abe05 = $(`<div id="html_7c51f69ac9b5c9db857d3ecfe86abe05" style="width: 100.0%; height: 100.0%;">3D Geospatial Data Processing Group / University of Heidelberg</div>`)[0];
+            popup_b9ef49352026bb7f278dc17c0895a64a.setContent(html_7c51f69ac9b5c9db857d3ecfe86abe05);
+        
+
+        marker_c177cb9f6b5269d915a55ec44eae34b9.bindPopup(popup_b9ef49352026bb7f278dc17c0895a64a)
+        ;
+
+        
+    
+    
+            var marker_3cd3e07af1336294b2f65af3b9305d43 = L.marker(
+                [39.906, 116.391],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_7d2d45a08985d84e0630d425d5ba4146 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3cd3e07af1336294b2f65af3b9305d43.setIcon(icon_7d2d45a08985d84e0630d425d5ba4146);
+        
+    
+        var popup_0f7d7f18c1ffd7cd2add8d3c16e4470c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c821f8860a4e5776ddb6e1a6444d7fbe = $(`<div id="html_c821f8860a4e5776ddb6e1a6444d7fbe" style="width: 100.0%; height: 100.0%;">Aerospace Information Research Institute, Chinese Academy of Sciences</div>`)[0];
+            popup_0f7d7f18c1ffd7cd2add8d3c16e4470c.setContent(html_c821f8860a4e5776ddb6e1a6444d7fbe);
+        
+
+        marker_3cd3e07af1336294b2f65af3b9305d43.bindPopup(popup_0f7d7f18c1ffd7cd2add8d3c16e4470c)
+        ;
+
+        
+    
+    
+            var marker_0f7b6dd232c99d2557e1c81802f96657 = L.marker(
+                [37.427, -122.169],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_462fae96f912bcc9ec3008558a874698 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f7b6dd232c99d2557e1c81802f96657.setIcon(icon_462fae96f912bcc9ec3008558a874698);
+        
+    
+        var popup_9b28d9f65230a7c49c30f8b37338dd38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ef2d8fb5ff885b3d040c7c07c692dc4 = $(`<div id="html_1ef2d8fb5ff885b3d040c7c07c692dc4" style="width: 100.0%; height: 100.0%;">Stanford</div>`)[0];
+            popup_9b28d9f65230a7c49c30f8b37338dd38.setContent(html_1ef2d8fb5ff885b3d040c7c07c692dc4);
+        
+
+        marker_0f7b6dd232c99d2557e1c81802f96657.bindPopup(popup_9b28d9f65230a7c49c30f8b37338dd38)
+        ;
+
+        
+    
+    
+            var marker_d409b64f3f8a6c304036c65e3c7c7fcf = L.marker(
+                [27.83, 114.933],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_89abc048ff018d80550a5dfa52bde70a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d409b64f3f8a6c304036c65e3c7c7fcf.setIcon(icon_89abc048ff018d80550a5dfa52bde70a);
+        
+    
+        var popup_e81efd44f58ef439c4fad239631a4e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_684b34f3a5c60e3e4f00d9aa9de9da8d = $(`<div id="html_684b34f3a5c60e3e4f00d9aa9de9da8d" style="width: 100.0%; height: 100.0%;">东华理工大学测绘与空间信息工程学院</div>`)[0];
+            popup_e81efd44f58ef439c4fad239631a4e06.setContent(html_684b34f3a5c60e3e4f00d9aa9de9da8d);
+        
+
+        marker_d409b64f3f8a6c304036c65e3c7c7fcf.bindPopup(popup_e81efd44f58ef439c4fad239631a4e06)
+        ;
+
+        
+    
+    
+            var marker_03efae635e89d4a2a0f555f2c75ceb85 = L.marker(
+                [22.275, 114.173],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_1d01a33806ab45674335f65bd143938d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03efae635e89d4a2a0f555f2c75ceb85.setIcon(icon_1d01a33806ab45674335f65bd143938d);
+        
+    
+        var popup_ecddf39e0f2cfdf1b16aaa10fe2d4e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e4c4580f9135bfec728f61376a87da1 = $(`<div id="html_4e4c4580f9135bfec728f61376a87da1" style="width: 100.0%; height: 100.0%;">Survey and mapping office, lands department, hksar</div>`)[0];
+            popup_ecddf39e0f2cfdf1b16aaa10fe2d4e9c.setContent(html_4e4c4580f9135bfec728f61376a87da1);
+        
+
+        marker_03efae635e89d4a2a0f555f2c75ceb85.bindPopup(popup_ecddf39e0f2cfdf1b16aaa10fe2d4e9c)
+        ;
+
+        
+    
+    
+            var marker_f1899ccb3eb4ad11eec6b336a97500c2 = L.marker(
+                [33.971, -6.849],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_e0735cf4ba6cceeecdf8dfd1b7b43369 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1899ccb3eb4ad11eec6b336a97500c2.setIcon(icon_e0735cf4ba6cceeecdf8dfd1b7b43369);
+        
+    
+        var popup_a1b71c3e71c2bf2143ad1f0d0381d00d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a233d03b5dd8684c574391d8f108c6ef = $(`<div id="html_a233d03b5dd8684c574391d8f108c6ef" style="width: 100.0%; height: 100.0%;">MOHAMMED V UNIVERSITY IN RABAT</div>`)[0];
+            popup_a1b71c3e71c2bf2143ad1f0d0381d00d.setContent(html_a233d03b5dd8684c574391d8f108c6ef);
+        
+
+        marker_f1899ccb3eb4ad11eec6b336a97500c2.bindPopup(popup_a1b71c3e71c2bf2143ad1f0d0381d00d)
+        ;
+
+        
+    
+    
+            var marker_8497eb74d8fcd752bda6aec98a692ae3 = L.marker(
+                [34.068, -118.445],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_6b85a3198b508555044788acc55a4712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8497eb74d8fcd752bda6aec98a692ae3.setIcon(icon_6b85a3198b508555044788acc55a4712);
+        
+    
+        var popup_735b1a2ea4d3ecb66b482bac260afc0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b6a0518d6d11493a557d716a48b75ea = $(`<div id="html_9b6a0518d6d11493a557d716a48b75ea" style="width: 100.0%; height: 100.0%;">University of California, Los Angeles</div>`)[0];
+            popup_735b1a2ea4d3ecb66b482bac260afc0f.setContent(html_9b6a0518d6d11493a557d716a48b75ea);
+        
+
+        marker_8497eb74d8fcd752bda6aec98a692ae3.bindPopup(popup_735b1a2ea4d3ecb66b482bac260afc0f)
+        ;
+
+        
+    
+    
+            var marker_225afbbe37fb0565d8d752a9c56ffee7 = L.marker(
+                [30.679, 104.063],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_1bdc6d57c200ee23c7127277b2ae0f82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_225afbbe37fb0565d8d752a9c56ffee7.setIcon(icon_1bdc6d57c200ee23c7127277b2ae0f82);
+        
+    
+        var popup_2b7ebe7e17483963fe9e42760c15c759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf559195502cd22efec655a6a2aae6fb = $(`<div id="html_cf559195502cd22efec655a6a2aae6fb" style="width: 100.0%; height: 100.0%;">University of Electronic Science and Technology of China</div>`)[0];
+            popup_2b7ebe7e17483963fe9e42760c15c759.setContent(html_cf559195502cd22efec655a6a2aae6fb);
+        
+
+        marker_225afbbe37fb0565d8d752a9c56ffee7.bindPopup(popup_2b7ebe7e17483963fe9e42760c15c759)
+        ;
+
+        
+    
+    
+            var marker_5ace9b811eff6cc9242d81e5d1ac3629 = L.marker(
+                [24.576, 118.097],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_b530d7b27c47dafa59349e3e23892dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5ace9b811eff6cc9242d81e5d1ac3629.setIcon(icon_b530d7b27c47dafa59349e3e23892dc9);
+        
+    
+        var popup_33bbf6435c4016682a1bfe3a9707d6ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23630568e73877c0376101d6f0c8d980 = $(`<div id="html_23630568e73877c0376101d6f0c8d980" style="width: 100.0%; height: 100.0%;">集美大学</div>`)[0];
+            popup_33bbf6435c4016682a1bfe3a9707d6ed.setContent(html_23630568e73877c0376101d6f0c8d980);
+        
+
+        marker_5ace9b811eff6cc9242d81e5d1ac3629.bindPopup(popup_33bbf6435c4016682a1bfe3a9707d6ed)
+        ;
+
+        
+    
+    
+            var marker_58a57291245f2b77295785e6714f5f56 = L.marker(
+                [30.761, 103.982],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_621d002e8d7939d936f66ff9bf51fa7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58a57291245f2b77295785e6714f5f56.setIcon(icon_621d002e8d7939d936f66ff9bf51fa7f);
+        
+    
+        var popup_f1ecb4fd87ea478cc4b080fbb820b0f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c23085afe747a53802cb2a82f13fa42c = $(`<div id="html_c23085afe747a53802cb2a82f13fa42c" style="width: 100.0%; height: 100.0%;">西南交通大学</div>`)[0];
+            popup_f1ecb4fd87ea478cc4b080fbb820b0f2.setContent(html_c23085afe747a53802cb2a82f13fa42c);
+        
+
+        marker_58a57291245f2b77295785e6714f5f56.bindPopup(popup_f1ecb4fd87ea478cc4b080fbb820b0f2)
+        ;
+
+        
+    
+    
+            var marker_a55c4a7913bda93962b525e5f6be6bf0 = L.marker(
+                [28.189, 113.036],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_ac4601988ceece60b959fd64aca5a51e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a55c4a7913bda93962b525e5f6be6bf0.setIcon(icon_ac4601988ceece60b959fd64aca5a51e);
+        
+    
+        var popup_41d2e3812a08045253e47166fda41639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_173266ed51fb98d5a4434c74f258d85f = $(`<div id="html_173266ed51fb98d5a4434c74f258d85f" style="width: 100.0%; height: 100.0%;">中南林业科技大学</div>`)[0];
+            popup_41d2e3812a08045253e47166fda41639.setContent(html_173266ed51fb98d5a4434c74f258d85f);
+        
+
+        marker_a55c4a7913bda93962b525e5f6be6bf0.bindPopup(popup_41d2e3812a08045253e47166fda41639)
+        ;
+
+        
+    
+    
+            var marker_f5c6c5982505cc564439f228895b8def = L.marker(
+                [28.459, 77.026],
+                {}
+            ).addTo(map_b0bb21608d2568b74538b481772e86ff);
+        
+    
+            var icon_768d2a7ad68f8c5c58b55068e1837f43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5c6c5982505cc564439f228895b8def.setIcon(icon_768d2a7ad68f8c5c58b55068e1837f43);
+        
+    
+        var popup_1e71345ee8c5e8d88c15735c2bdd1f55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f14d7ea8410c1134ac6f3bec394578 = $(`<div id="html_b5f14d7ea8410c1134ac6f3bec394578" style="width: 100.0%; height: 100.0%;">Yamaha Motor Solutions India Pvt. Ltd</div>`)[0];
+            popup_1e71345ee8c5e8d88c15735c2bdd1f55.setContent(html_b5f14d7ea8410c1134ac6f3bec394578);
+        
+
+        marker_f5c6c5982505cc564439f228895b8def.bindPopup(popup_1e71345ee8c5e8d88c15735c2bdd1f55)
+        ;
+
+        
+    
+</script>
+</html>
